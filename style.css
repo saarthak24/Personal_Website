@@ -59,6 +59,7 @@ a {
     color: white !important;
     text-align: center;
     padding: 14px 16px;
+	transition: all .3s ease;
 }
 
 .nav-item a:hover {
@@ -69,6 +70,7 @@ a {
 .name-header {
     color: #1B1B1B;
     text-align: center;
+	text-transform: uppercase;
 }
 
 .sub-header {
@@ -229,7 +231,6 @@ p {
 .skills-heading {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.5vw;
 }
 
 .skills-item {
@@ -242,7 +243,8 @@ p {
     width: 100px;
     height: 100px;
     line-height: 7;
-    font-size: 14px
+    font-size: 14px;
+	overflow: hidden;
 }
 
 @media only screen and (max-width:1170px) {
@@ -270,4 +272,131 @@ p {
         height: 80px;
         line-height: 5.5
     }
+}
+
+#projects-section {
+	padding: 50px;
+}
+
+.project {
+	margin: 0;
+	display: block;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.screenshots {
+    position: relative;
+    overflow: hidden;
+    display: block;
+	margin-bottom: 15px;
+	width: 98%
+}
+
+.screenshots img {
+	max-height: 500px;
+	object-fit: contain;
+	border: 0;
+	border-radius: 3px;
+}
+
+.carousel-item {
+	height: 100% !important;
+}
+
+.project-title-container {
+	position: relative;
+	width: 98%;
+	align-items: baseline;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: stretch;
+}
+
+.project-title {
+	text-transform: uppercase;
+	flex: 1;
+	font-family: Gotham,Helvetica,Arial,sans-serif;
+	margin-bottom: 30px;
+}
+
+.project-title-buttons a {
+	padding: 10px 15px;
+	background: 0 0;
+	border: 2px solid #1B1B1B;
+	border-radius: 3px;
+	margin: 0 5px;
+	color: #1B1B1B;
+	font-family: Gotham,Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all .3s ease;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.project-title-buttons a:hover {
+	background-color: #1B1B1B;
+    color: white;
+}
+
+.project-description {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+}
+
+.project-description a {
+	text-decoration: underline !important;
+}
+
+.line-separator {
+	height: 1px;
+	border: 1px solid;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.section.one.line-separator {
+	background: #1B1B1B;
+}
+
+.section.two.line-separator {
+	background: white;
+}
+
+.tags {
+	display: block;
+	width: 95%;
+	font-family: Gotham,Helvetica,Arial,sans-serif;
+	margin-bottom: 30px;
+}
+
+.tags-list {
+	list-style: none;
+	padding: 0;
+}
+
+.tags-list-item {
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+	margin-right: 5px;
+	border: 1.5px solid #1B1B1B;
+	color: #1B1B1B;
+	background: 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	transition: all .3s ease;
+}
+
+.tags-list-item:hover {
+	color: white;
+	background: #1B1B1B;
 }
