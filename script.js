@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('#headers-wrapper').css('visibility', 'visible');
+    $('#headers-wrapper').animateCss('fadeInDownBig');
+
     $('.carousel').carousel({
         padding: 50
     });
@@ -24,6 +27,16 @@ $(document).ready(function() {
             });
         } // End if
     });
+});
+
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
 });
 
 $(window).scroll(function() {

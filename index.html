@@ -16,6 +16,7 @@
 		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<link rel="shortcut icon" href="Saarthak.png" />
@@ -33,19 +34,28 @@
 		<a class="btn-floating btn-large waves-effect waves-light black" id="backToTop" href="#home-section"><i class="material-icons md-36">arrow_upward</i></a>
 
 		<div class="section one" id="home-section">
-			<h1 class="name-header">Saarthak Sethi</h1>
-			<h4 class="sub-header">Student at TJHSST</h4>
-			<img class="img-responsive" src="Saarthak.png" id="icon" alt="Logo">
+			<div id="headers-wrapper">
+				<h1 class="name-header">Saarthak Sethi</h1>
+				<div class="line-separator center-align"></div>
+				<h4 class="sub-header">Student at TJHSST</h4>
+			</div>
 		</div>
 
 		<div class="section two" id="about-section">
 			<h2 class="center-align"><i class="material-icons md-36">person</i> About </h2>
-			<p>I'm a <b>senior at Thomas Jefferson High School for Science and Technology</b>, a magnet school in Northern Virginia. I have experience with <b>software development and graphic design</b>. I strive to create software that not only functions efficiently
-				under the hood, but also provides intuitive, pixel-perfect user experiences.</p>
+			<div class="about-text-wrapper">
+				<p>I'm a <b>senior at Thomas Jefferson High School for Science and Technology</b>, a magnet school in Northern Virginia. I have experience with <b>software development and graphic design</b>. I strive to create software that not only functions efficiently
+					under the hood, but also provides intuitive, pixel-perfect user experiences.</p>
 
-			<p>I love learning new and better ways to create elegant user experiences with clean and efficient code. I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn.</p>
+				<p><b>When I'm not coding</b>, I'm probably listening to music, using Reddit, playing sports, or messing around in Photoshop.</p>
 
-			<p>Currently, I'm seeking opportunites that will leverage my knowledge and experience in computer programming and graphic design, while giving me opportunities to learn.</p>
+				<p>I love learning new and better ways to create elegant user experiences with clean and efficient code. I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn.</p>
+
+				<p>Currently, I'm seeking opportunites that will leverage my knowledge and experience in computer programming and graphic design, while giving me opportunities to learn.</p>
+			</div>
+			<div class="about-image-wrapper">
+				<img class="img-responsive" src="Saarthak.png" id="icon" alt="Logo">
+			</div>
 		</div>
 
 		<div class="section one" id="education-section">
@@ -172,8 +182,8 @@
 					<img src="screenshots/SpotifyHelper.png" alt="Screenshot">
 				</div>
 				<p class="project-description">Over the years, I have accumulated <b>a lot</b> of music. I use Spotify to listen to my music and have over 1700 tracks in my library. I wanted to create a "throwback" playlist, which would contain all of my music that was released in or before 2010.
-					However, Spotify provides you with no easy way to go about making such a playlist. I would have had to manually go through every song in my huge library and click on each one to see when it was released. So, I created this web application with <a href="https://developer.spotify.com/web-api/">Spotify's
-					Web API</a>, to do all the work for me! Over the course of developing this application, I learned a lot about AJAX, using JSON-Based APIs, and OAuth.
+					However, Spotify provides you with no easy way to go about making such a playlist. I would have had to manually go through every song in my huge library and click on each one to see when it was released. So, I created this web application with
+					<a href="https://developer.spotify.com/web-api/">Spotify's Web API</a>, to do all the work for me! Over the course of developing this application, I learned a lot about AJAX, using JSON-Based APIs, and OAuth.
 				</p>
 				<div class="tags">
 					<ul class="tags-list">
