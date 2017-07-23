@@ -735,6 +735,11 @@ time {
     }
 }
 
-.timeline-date {
+.timeline-date, .timeline-name {
     font-weight: bold;
+}
+
+.timeline p {
+    font-size: initial;
+    line-height: initial;
 }
