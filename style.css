@@ -103,6 +103,10 @@ a {
 	vertical-align: top;
 }
 
+.about-text-wrapper a {
+    text-decoration: underline !important;
+}
+
 .about-image-wrapper {
 	width: 40%;
 	display: inline-block;
@@ -545,6 +549,10 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     background-color: white;
 }
 
+#comment {
+    margin-bottom: 10px;
+}
+
 #button-blue {
 font-family: 'PT Sans', sans-serif;
     float: left;
@@ -554,12 +562,11 @@ font-family: 'PT Sans', sans-serif;
     background-color: #1B1B1B;
     color: white;
     font-size: 24px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top: -4px;
     font-weight: 700;
 }
 
@@ -574,7 +581,7 @@ font-family: 'PT Sans', sans-serif;
 
 .ease {
     width: 0px;
-    height: 74px;
+    height: 78px;
     background-color: #fbfbfb;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
